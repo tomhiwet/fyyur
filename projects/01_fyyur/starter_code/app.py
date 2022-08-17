@@ -13,12 +13,13 @@ from logging import Formatter, FileHandler
 from flask_wtf import Form
 from forms import *
 from sqlalchemy_utils import create_database, database_exists
+from models import db, Artist, Venue, Show
 import config
 import traceback
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
 from sqlalchemy.orm.exc import NoResultFound
-from models import db, Artist, Venue, Show
+
 #----------------------------------------------------------------------------#
 # App Config.
 #----------------------------------------------------------------------------#
